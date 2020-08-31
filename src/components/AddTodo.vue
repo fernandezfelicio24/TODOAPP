@@ -9,8 +9,6 @@
 
 
 <script>
-import { v4 as uuid } from "uuid";
-
 export default {
   name: "AddTodo",
   data() {
@@ -23,7 +21,6 @@ export default {
       e.preventDefault();
 
       const newTodo = {
-        id: uuid,
         title: this.title,
         completed: false,
       };
